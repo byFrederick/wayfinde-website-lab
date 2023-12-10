@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0rem;
+}
+
+.slider-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  width: calc(100% * 10 + 2);  
+  user-select: none;
+  transition: transform 0.5s ease-out;
+}
+
+#image-track > .image {
+  width: calc(100% / 10  + 2); 
+  height: 46vmin;
+  object-fit: cover;
+}
+
+/**
+ * Autolinker plugin overrides
+ * https://prismjs.com/plugins/autolinker
+ */
+
+/* Link in the code */
+.token.token a {
+	color: unset; /* default: inherit */
+}

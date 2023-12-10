@@ -1,0 +1,678 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="pics/favicon.png" type="image.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="write.machine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet"/>
+    <link href="path/to/prism-rainbow-brackets.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="okadia.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <link rel="preload" href="pics/slider-images/slider-1.jpg" as="slider-1">
+    <link rel="preload" href="pics/slider-images/slider-2.jpg" as="slider-2">
+    <link rel="preload" href="pics/slider-images/slider-3.jpg" as="slider-3">
+    <link rel="preload" href="pics/slider-images/slider-4.jpg" as="slider-4">
+    <link rel="preload" href="pics/slider-images/slider-5.jpg" as="slider-5">
+    <link rel="preload" href="pics/slider-images/slider-6.jpg" as="slider-6">
+    <link rel="preload" href="pics/slider-images/slider-7.jpg" as="slider-7">
+    <link rel="preload" href="pics/slider-images/slider-8.jpg" as="slider-8">
+    <link rel="preload" href="pics/slider-images/slider-9.jpg" as="slider-9">
+    <link rel="preload" href="pics/slider-images/slider-10.jpg" as="slider-10">
+    
+
+    <title class="title-top">WayFinder</title>
+  </head>
+  <body>
+  <!--========================================================== -->
+                        <!-- ENCABEZADO -->
+  <!--========================================================== -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <span class="fs-5 fw-bold title-top">WayFinder</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-mapa">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-contacto">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-documentacion">Documentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" id="entitySelect" aria-label="GTFS Files">
+                            <option selected>GTFS FOLDER</option>
+                            <option value="routes">Routes</option>
+                            <option value="stops">Stops</option>
+                            <option value="trips">Trips</option>
+                            <option value="stop_times">Stop_times</option>
+                            <option value="calendar">Calendar</option>
+                            <option value="agency">Agency</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!--========================================================== -->
+                        <!-- SLIDER DE IMAGENES-->
+    <!--========================================================== -->
+   
+    <div class="container-fluid">
+      <div id="image-track" class="image-track-container" data-mouse-down-at="0" data-prev-percentage="0">
+        <div></div>
+        <img class="rounded image" src="pics/slider-images/slide-10.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-2.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-3.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-4.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-5.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-6.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-7.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-8.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-9.jpg" draggable="false" />
+        <img class="rounded image" src="pics/slider-images/slide-1.jpg" draggable="false" />
+      </div>
+    </div>
+    
+    <!--========================================================== -->
+                        <!-- INTRODUCCION DE SERVICIOS-->
+    <!--========================================================== -->
+
+
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-bottom border-3 secondary-title">Potencia tus apps de transporte con la data completa de<span class="title-top"> Wayfinder<span/></h1>
+     <p class="p-3  fs-4 secondary-title">
+         <span class="title-top"></span> la plataforma para desarrolladores de aplicaciones de transporte público más poderosa
+     </p>   
+    </section>
+
+   <!--========================================================== -->
+                        <!-- TIPOS DE SERVICIOS-->
+    <!--========================================================== -->
+
+
+<section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">       
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center my-5 icono-wrap ">
+            <img src="pics/code.png" alt="desarrollo"   width="180" height="160" data-aos="fade-up"
+            data-aos-duration="2000" draggable="false">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1 secondary-title">Desarrollo de aplicaciones</h3>
+                <p class="px-4 main-text">Fuente rica de información para desarrolladores de aplicaciones</p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center  my-5 icono-wrap">
+            <img src="pics/integracion-de-datos.png" alt="concepto" width="180" height="160" data-aos="fade-up"
+            data-aos-duration="3000" draggable="false">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap secondary-title">Facíl integración</h3>
+                <p class="px-4 main-text"> Coordina diferentes medios de transporte para mayor conveniencia</p>
+            </div>
+        </div>   
+    </div>
+    
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center  my-5 icono-wrap">
+            <img src="pics/navegador.png" alt="comunicaciones" width="180" height="160" data-aos="fade-up"
+            data-aos-duration="3000" draggable="false">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1 secondary-title">Reducción del trafíco</h3>
+                <p class="px-4 main-text">Fomenta el uso del transporte público</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center my-5 icono-wrap">
+            <img src="pics/easy-access.png" alt="seo" width="180" height="160" data-aos="fade-up"
+            data-aos-duration="3000" draggable="false">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1 secondary-title">Accesibilidad y eficiencia</h3>
+                <p class="px-4 main-text">Planifica viajes de transporte público de manera efectiva</p>
+            </div>
+        </div>   
+    </div>
+</section>
+
+<!--========================================================== -->
+                        <!-- SECCION ACERCA DE MAPA-->
+<!--========================================================== -->
+
+</section>
+<div class="container w-50 m-auto text-center" id="equipo">
+  <h1 class="fs-2 secondary-title" id="seccion-mapa">Ruta de carros público de SD</h1>
+</div>
+<div id="map-container">
+  <div id="map">
+  </div>
+</div>
+
+<!--========================================================== -->
+                        <!-- SECCION ACERCA DOCUMENTACION-->
+<!--========================================================== -->
+<h1 id="seccion-documentacion" class="p-3 fs-2 border-bottom border-3 secondary-title" style="text-align: center;">Documentación del API WayFinder</h1>
+<p class="px-4 main-text" style="text-align: justify;margin-left: 5%; margin-right : 5%; font-size: medium; padding-top: 3%; padding-bottom: 3%;">Bienvenidos a nuestra API del transporte público de Santo Domingo, más específicamente de los carros públicos.
+  Utilizando Node.js y Express, nos conectamos a una base de datos SQL Server con alta disponibilidad en Azure para ofrecerte información en tiempo real sobre las rutas de transporte. Nuestros datos GTFS están disponibles para potenciar tus aplicaciones de mapeo,
+   planificación de transporte y análisis de tráfico. ¡Comienza a explorar y descubre lo que puedes crear!</p>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-7">
+          <h2 class="mt-4">Cómo empezar a probar</h2>
+          <p>Para utilizar nuestra API puedes utilizar:</p>
+          <ul>
+              <li>Cliente HTTP: <a href="https://www.postman.com/downloads/" target="_blank">Postman</a>, <a href="https://www.thunderclient.io/" target="_blank">Thunder Client</a>, o tu cliente de preferencia.</li>
+              <li><a href="https://nodejs.org/es/download/" target="_blank">Node.js</a>: (Opcional) Si quieres interactuar con nuestra API desde tu código.</li>
+          </ul>
+      
+          <h3 class="mt-3">Requisitos</h3>
+          <ul>
+              <li>Cliente HTTP (<a href="https://www.postman.com/downloads/" target="_blank">Postman</a>, <a href="https://www.thunderclient.io/" target="_blank">Thunder Client</a>, etc.)</li>
+              <li><a href="https://nodejs.org/es/download/" target="_blank">Node.js</a> (para desarrollo local)</li>
+          </ul>
+      
+          <h3 class="mt-3">Pasos</h3>
+          <ol>
+              <li>Descarga e instala un cliente HTTP.</li>
+              <li>(Opcional) Si planeas desarrollar localmente, asegúrate de tener <a href="https://nodejs.org/es/download/" target="_blank">Node.js</a> instalado.</li>
+              <li>¡ A continuación sigue los pasos que se muestran más adelante y estarás listo para desarrloar con nuestra API !</li>
+              
+
+          </ol>
+          <p class="mt-3">Recuerda, si tienes alguna duda, estamos aquí para ayudarte.</p>
+      </div>
+      <div class="col-md-5">
+          <div class="row">
+              <div class="col-sm-12 d-flex justify-content-center mb-3">
+                  <img src="pics/companies-images/node.js.png" alt="Logo Postman" class="img-fluid custom-img" draggable="false">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6 d-flex justify-content-center mb-3">
+                  <img src="pics/companies-images/postman.png" alt="Logo Thunder Client" class="img-fluid custom-img" draggable="false">
+              </div>
+              <div class="col-6 d-flex justify-content-center mb-3">
+                  <img src="pics/companies-images/thunderclient.avif" alt="Logo Node.js" class="img-fluid custom-img" draggable="false">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<body>
+<!--========================================================== -->
+                        <!-- URL DE NUESTRA API-->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-center mt-5">
+      <div class="col-md-8"> 
+        <div class="header-section" style="display: flex; justify-content: flex-end;">
+          <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardApiUrl()">
+              <i id="copyIcon-ApiUrl" class="bi bi-clipboard"></i>
+          </button>
+      </div>  
+          <pre id="api-url">
+              <code id="typewriter" class="language-javascript match-braces data-download-link rainbow-braces">
+                  <code>
+                  </code>
+              </code>
+          </pre>
+      </div>
+      <div class="col-md-4">
+          <div class="mb-4">
+              <p><strong>Esta es la URL base de nuestra API</strong>. Todos los endpoints se construirán a partir de esta base.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!--========================================================== -->
+                        <!-- SECCION ACERCA DOCUMENTACION ROUTES-->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Endpoint:</h1>
+                  <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardRoutes()">
+                      <i id="copyIcon-routes" class="bi bi-clipboard"></i>
+                  </button>
+              </div>
+              <pre id="copyText-routes"><code class="language-javascript match-braces data-download-link rainbow-braces">
+fetch('https://gtfs-restapi-production.up.railway.app/routes')
+.then(response => response.json())
+.then(data => console.log(data));
+               
+              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-4" style="text-align:justify;">
+          <h3>/routes</h3>
+          <p>Este endpoint devuelve todas las rutas de transporte disponibles en Santo Domingo.</p>
+          <p>Metodo: <strong>GET</strong></p>
+
+          <p>Respuesta: Un arreglo de objetos, donde cada objeto representa una ruta de transporte y contiene detalles como el ID de la ruta, el nombre de la ruta, el tipo de vehículo y más.</p>
+      </div>
+  </div>
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Estructura de la respuesta:</h1>
+              </div>
+              <pre id="copyText-routes"><code class="language-json match-braces data-download-link rainbow-braces">
+{"route_id":105,"agency_id":1,"route_short_name":"C-99 B",
+"route_long_name":"Carretera Mella Esq. Av. Charles deGaulle (Km. 9)
+ a H7C/Miguel Diaz Esq. C/Francisco de Porras.","route_type":5}
+                              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+          <img src="pics/doc-images/ruta.png" alt="routes" class="img-fluid custom-img" draggable="false">
+      </div>
+  </div>
+</div>
+
+
+<!--========================================================== -->
+                        <!-- SECCION ACERCA STOPS->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Endpoint:</h1>
+                  <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardStops()">
+                      <i id="copyIcon-stops" class="bi bi-clipboard"></i>
+                      <span id=""></span>
+                  </button>
+              </div>
+              <pre id="copyText-stops"><code class="language-javascript match-braces data-download-link rainbow-braces">
+fetch('https://gtfs-restapi-production.up.railway.app/stops')
+.then(response => response.json())
+.then(data => console.log(data));
+              
+              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-4" style="text-align:justify;">
+        <h3>Endpoint: /stops</h3>
+        <p>Este endpoint devuelve todas las paradas de transporte disponibles en Santo Domingo.</p>
+        <p>Metodo: <strong>GET</strong></p>
+        <p>Respuesta: Un arreglo de objetos, donde cada objeto representa una parada de transporte y contiene detalles como el ID de la parada, el nombre de la parada, la ubicación y más.</p>
+      </div>
+  </div>
+
+  <div class="row align-items-start mt-5">
+    <div class="col-md-8">   
+        <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+            <div class="header-section">
+                <h1 class="fs-2 secondary-title">Estructura de la respuesta:</h1>
+            </div>
+            <pre id="copyText-routes"><code class="language-json match-braces data-download-link rainbow-braces">
+{"stop_id":"stop1","stop_name":"Carretera Mella Esq.
+ Av. Charles de Gaulle (Km. 9)","stop_lat":18.5192543,
+ "stop_lon":-69.8347524}
+                            </code></pre>
+        </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <img src="pics/doc-images/stops.png" alt="routes" class="img-fluid custom-img" draggable="false">
+    </div>
+</div>
+
+</div>
+<!--========================================================== -->
+                        <!-- SECCION ACERCA STOPS_TIMES->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Endpoint:</h1>
+                  <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardStopTimes()">
+                      <i id="copyIcon-stop_times" class="bi bi-clipboard"></i>
+                      <span id=""></span>
+                  </button>
+              </div>
+              <pre id="copyText-stop_times"><code class="language-javascript match-braces data-download-link rainbow-braces">
+fetch('https://gtfs-restapi-production.up.railway.app/stop_times')
+.then(response => response.json())
+.then(data => console.log(data));
+              
+              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-4" style="text-align:justify;">
+        <h3>Endpoint: /stop_times</h3>
+        <p>Este endpoint devuelve los tiempos de parada para las rutas de transporte en Santo Domingo.</p>
+        <p>Metodo: <strong>GET</strong></p>
+        <p>Respuesta: Un arreglo de objetos, donde cada objeto representa un tiempo de parada y contiene detalles como el ID de la parada, el ID de la ruta, el tiempo de llegada y más.</p>
+      </div>
+  </div>
+
+  <div class="row align-items-start mt-5">
+    <div class="col-md-8">   
+        <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+            <div class="header-section">
+                <h1 class="fs-2 secondary-title">Estructura de la respuesta:</h1>
+            </div>
+            <pre id="copyText-routes"><code class="language-json match-braces data-download-link rainbow-braces">
+{"trip_id":"trip1","arrival_time":"1:00:00",
+"departure_time":"8:00:00","stop_id":"stop1",
+"stop_sequence":1}
+                            </code></pre>
+        </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <img src="pics/doc-images/stop_times.png" alt="routes" class="img-fluid custom-img" draggable="false">
+    </div> 
+</div>
+
+</div>
+<!--========================================================== -->
+                        <!-- SECCION ACERCA TRIPS->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Endpoint:</h1>
+                  <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardTrips()">
+                      <i id="copyIcon-trips" class="bi bi-clipboard"></i>
+                      <span id=""></span>
+                  </button>
+              </div>
+              <pre id="copyText-trips"><code class="language-javascript match-braces data-download-link rainbow-braces">
+fetch('https://gtfs-restapi-production.up.railway.app/trips')
+.then(response => response.json())
+.then(data => console.log(data));
+              
+              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-4" style="text-align:justify;">
+        <h3>Endpoint: /trips</h3>
+        <p>Este endpoint proporciona información sobre los viajes individuales realizados por los vehículos de transporte en Santo Domingo.</p>
+        <p>Metodo: <strong>GET</strong></p>
+        <p>Respuesta: Un arreglo de objetos, donde cada objeto representa un viaje y contiene detalles como el ID del viaje, el ID de la ruta, el ID del servicio y más.</p>
+      </div>
+  </div>
+
+  <div class="row align-items-start mt-5">
+    <div class="col-md-8">   
+        <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+            <div class="header-section">
+                <h1 class="fs-2 secondary-title">Estructura de la respuesta:</h1>
+            </div>
+            <pre id="copyText-routes"><code class="language-json match-braces data-download-link rainbow-braces">
+{"route_id":105,"service_id":208,"trip_id":"trip1"},
+{"route_id":114,"service_id":217,"trip_id":"trip10"},
+{"route_id":204,"service_id":307,"trip_id":"trip100"}
+                            </code></pre>
+        </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <img src="pics/doc-images/trips.png" alt="routes" class="img-fluid custom-img" draggable="false">
+    </div>
+</div>
+
+</div>
+<!--========================================================== -->
+                        <!-- SECCION ACERCA CALENDAR->
+<!--========================================================== -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col-md-8">   
+          <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+              <div class="header-section">
+                  <h1 class="fs-2 secondary-title">Endpoint:</h1>
+                  <button id="copyButton" class="btn btn-primary copy-button" data-copy-state="copy" onclick="copyCodeToClipboardCalendar()">
+                      <i id="copyIcon-calendar" class="bi bi-clipboard"></i>
+                      <span id=""></span>
+                  </button>
+              </div>
+              <pre id="copyText-calendar"><code class="language-javascript match-braces data-download-link rainbow-braces">
+fetch('https://gtfs-restapi-production.up.railway.app/calendar')
+.then(response => response.json())
+.then(data => console.log(data));
+              
+              </code></pre>
+          </div>
+      </div>
+      <div class="col-md-4" style="text-align:justify;">
+        <h3>Endpoint: /calendar</h3>
+        <p>Este endpoint proporciona información sobre los horarios de operación del servicio de transporte en Santo Domingo.</p>
+        <p>Metodo: <strong>GET</strong></p>
+        <p>Respuesta: Un arreglo de objetos, donde cada objeto representa un día en el calendario del servicio de transporte y contiene detalles como la fecha, si el servicio está disponible y más.</p>
+      </div>
+  </div>
+
+  <div class="row align-items-start mt-5">
+    <div class="col-md-8">   
+        <div class="code-section editor line-numbers data-line match-braces data-download-link rainbow-braces">
+            <div class="header-section">
+                <h1 class="fs-2 secondary-title">Estructura de la respuesta:</h1>
+            </div>
+            <pre id="copyText-routes"><code class="language-json match-braces data-download-link rainbow-braces">
+{"service_id":208,"monday":true,"tuesday":true,"wednesday"
+:true,"thursday":true,"friday":true,"saturday":true,"sunday":
+true,"start_date":"2023-01-01T00:00:00.000Z",
+"end_date":"2023-12-31T00:00:00.000Z"}
+                            </code></pre>
+        </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <img src="pics/doc-images/calendar.png" alt="routes" class="img-fluid custom-img" draggable="false">
+    </div>
+</div>
+
+</div>
+<!--========================================================== -->
+                        <!-- DOCUMENTACION SECCION FINAL->
+<!--========================================================== -->
+<!-- Respuestas de la API -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col">
+          <h2>Respuestas de la API</h2>
+          <p>Nuestra API responde con códigos de estado HTTP estándar para indicar el éxito o fracaso de una solicitud. Las respuestas exitosas devolverán un cuerpo de respuesta en formato JSON, que sigue la estructura de un documento GTFS estándar.</p>
+          <p>Por ejemplo, una solicitud GET a cualquier endpoint puede devolver una respuesta exitosa (HTTP 200) con un cuerpo de respuesta que contiene un arreglo de objetos JSON.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Casos de Uso -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col">
+          <h2>Casos de uso</h2>
+          <p>Nuestra API puede ser de gran utilidad para desarrolladores y empresas que trabajen en el desarrollo de aplicaciones de transporte, análisis de rutas, o cualquier proyecto que requiera de datos precisos y actualizados del sistema de transporte público de Santo Domingo. Tal y como mostramos en los siguientes puntos.</p>
+          <ol>
+            <li><strong>Optimización de Rutas Inteligentes:</strong> Utiliza nuestros datos en tiempo real para desarrollar algoritmos de optimización de rutas avanzados. Ayuda a las flotas de carros públicos a planificar rutas eficientes en función del tráfico actual, reduciendo los tiempos de espera y mejorando la experiencia de los pasajeros.</li>
+            <li><strong>Análisis Predictivo del Flujo de Pasajeros:</strong> Aprovecha los datos históricos y en tiempo real para predecir la demanda de pasajeros en diferentes rutas y horarios. Esto permite a las empresas de transporte ajustar sus operaciones según las tendencias de demanda, asignando recursos de manera óptima y mejorando la satisfacción del usuario.</li>
+            <li><strong>Plataforma de Información Multimodal:</strong> Crea una aplicación que integre datos de diferentes modos de transporte, como carros públicos, metro, autobuses y más. Ofrece a los usuarios opciones de viaje completas y coherentes, facilitando la planificación de rutas y fomentando el uso de transportes públicos en la ciudad.</li>
+            </ol>
+            Estos casos de uso pueden transformar la forma en que se aborda el transporte público en Santo Domingo y brindar soluciones innovadoras a los desafíos actuales del sistema de transporte.
+      </div>
+  </div>
+</div>
+
+<!-- Soporte -->
+<div class="container">
+  <div class="row align-items-start mt-5">
+      <div class="col">
+          <h2>Soporte</h2>
+          <p>Para cualquier pregunta o problema con nuestra API, por favor, contacta con nosotros a través del formulario de contacto que se encuentra más abajo en esta página. Nuestro equipo de soporte está disponible y listo para ayudarte.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Conclusión -->
+<div class="container" style="padding-bottom: 10%;">
+  <div class="row align-items-start mt-5">
+      <div class="col">
+          <h2>Conclusión</h2>
+          <p>Gracias por tu interés en nuestra API. Este es un proyecto universitario que hemos creado con mucho esfuerzo y dedicación. Esperamos que te sea de utilidad en tus proyectos y desarrollos. Continuaremos mejorando y expandiendo nuestras funcionalidades, así que ¡mantente al tanto de nuestras actualizaciones!</p>
+      </div>
+  </div>
+</div>
+
+<!--========================================================== -->
+                        <!-- SECCION CONTACTOS-->
+<!--========================================================== -->
+
+<section id="seccion-contacto" class="d-flex flex-column justify-content-between border-bottom border-2">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-12">
+      <div class="container" id="contenedor-formulario">
+        <div class="text-center mb-4" id="titulo-formulario">
+          <h2 class="text-white">Contactanos</h2>
+        </div>
+        <form action="https://formspree.io/f/maygqdjr" method="POST">
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="someone@example.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="name">Nombre</label>
+            <input
+              type="text" 
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Juan Perini Feikini"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              name="phone"
+              id="phone"
+              placeholder="xxx-xxx-xxxx"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message">Mensaje</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="4"
+              placeholder="Cuentanos como podemos ayudarte"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 fs-5">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--========================================================== -->
+                        <!--FOOTER-->
+<!--========================================================== -->
+
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+  <p class="fs-5 px-3  pt-3 secondary-title">WayFinder. &copy; All Rights Reserved 2023</p>
+  <div id="iconos" >
+  <a href="https://github.com/sniperwolf27/Proyecto-de-Grado"><i class="bi bi-github"></i></a> 
+  </div>
+</footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/bootstrap-icons@1.0.0/font/bootstrap-icons.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/clipboard/prism-clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/show-language/prism-show-language.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="path/to/prism-rainbow-brackets.min.js"></script>
+
+
+    
+    <script>
+      AOS.init();
+    </script>
+    <script async 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA2PYXehw8ARLSmvfaWdVv9OWONeQpZQc&callback=initMap">
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      </script>
+      
+    <script src="maps.api.js"></script>
+    <script src="copy.btn.js"></script>
+    <script src="main.js" ></script>
+    <script src="write.machine.js" ></script>
+    <script src="mouseHover.js" ></script>
+  </body>
+
+</html>
